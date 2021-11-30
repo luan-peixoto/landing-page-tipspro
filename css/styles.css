@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+/* fonte da pagina */
+.font-russo {
+    font-family: 'Russo One', sans-serif;
+}
+
+
+/* tamanho da fonte */
+@media (min-width: 0px) {
+    .html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) {
+    .html {
+        font-size: calc(16px + 0.125vh);
+    }
+}
+
+@media (min-width: 992px) {
+    .html {
+        font-size: calc(16px + 0.25vw);
+    }
+}
+
+/* primeiro background
+height é o tamanho da div que tem que ser o mesmo
+do tamanho da imagem, no-repeat é para deixar um fundo branco caso a tela passe do tamanho da 
+imagem horizontamente, center, centralizar a imagem, como o tamanho da div é o mesmo do da img,
+não é necessário colocar center top, position relative serve para o position absolute da barra funcionar*/
+.bg-img-1 {
+    background-image: url(../images/bg-1-gramado.png);
+    background-repeat: no-repeat;
+    height: 611px;  
+    background-position: center;
+    position: relative;
+}
+
+
+/* fonte do gramado */
+.font-branca {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(51, 51, 51), 0 0 0.2em rgb(51, 51, 51);
+}
+
+/* adicionar animação ao botão */
+.btn-animado {
+    animation: grow-shrink 0.5s linear 0s infinite alternate;
+    background-color: #00c16a;
+    color: #fefefe;
+    border: solid 5px;
+    border-radius: 10px;
+    border-color: #fefefe;
+}
+
+.btn-animado:hover {
+    animation: grow-shrink 0.5s linear 0s infinite alternate;
+    background-color: #00c16a;
+    color: #fefefe;
+}
+
+.btn-animado:focus {
+    animation: grow-shrink 0.5s linear 0s infinite alternate;
+    background-color: #00c16a;
+    color: #fefefe;
+    outline: none;
+    box-shadow: none;
+}
+  
+@keyframes grow-shrink {
+    from { transform: scale(1); }
+    to   { transform: scale(1.1); }
+}
+
+/* barra com posicao fixa no componente gramado 
+object-fit com max-width 100% e height fixo faz com o que o objeto se adapte ao tamanho da div, sendo
+cortado pelas laterias ao inves de encolhido*/
+.bg-item-1 {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    object-fit: cover;
+    max-width: 100%;
+    height: 104px;
+}
+
+/* background-2 */
+.bg-cinza {
+    height: 611px;  
+    background-color: #fafafa; 
+}
+
+/* posição relativa no container pro posicionamento do campo de fut funcionar */
+.relative {
+    position: relative;
+}
+
+/* fonte cinza */
+
+.font-cinza {
+    color: #929396;
+}
+
+/* campo de fut componente2 */
+
+@media (min-width: 0px) {
+    .z-0 {
+        position: absolute;
+        top: 150px;
+        right: 300px;
+        z-index: 0;
+        width: 400px;
+        object-fit: cover;
+        max-height: calc(100% - 150px);
+        opacity: 0.3;
+        -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+}
+
+@media (min-width: 576px) {
+    .z-0 {
+        position: absolute;
+        top: 150px;
+        right: 250px;
+        z-index: 0;
+        width: 400px;
+        object-fit: cover;
+        max-height: calc(100% - 150px);
+        opacity: 0.3;
+        -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+}
+
+@media (min-width: 768px) {
+    .z-0 {
+        position: absolute;
+        top: 150px;
+        left:0;
+        z-index: 0;
+        width: 400px;
+        max-height: calc(100% - 150px);
+        object-fit: cover;
+        opacity: 0.3;
+        -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }
+}
