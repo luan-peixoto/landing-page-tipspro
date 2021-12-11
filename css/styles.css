@@ -33,7 +33,7 @@ não é necessário colocar center top, position relative serve para o position 
 .bg-img-1 {
     background-image: url(../images/bg-1-gramado.png);
     background-repeat: no-repeat;
-    height: 611px;  
+    min-height: 611px;  
     background-position: center;
     position: relative;
 }
@@ -89,7 +89,7 @@ cortado pelas laterias ao inves de encolhido*/
 
 /* background-2 */
 .bg-cinza {
-    height: 611px;  
+    min-height: 681px;  
     background-color: #fafafa; 
 }
 
@@ -109,7 +109,7 @@ cortado pelas laterias ao inves de encolhido*/
 @media (min-width: 0px) {
     .z-0 {
         position: absolute;
-        top: 150px;
+        top: 185px;
         right: 300px;
         z-index: 0;
         width: 400px;
@@ -124,7 +124,7 @@ cortado pelas laterias ao inves de encolhido*/
 @media (min-width: 576px) {
     .z-0 {
         position: absolute;
-        top: 150px;
+        top: 185px;
         right: 250px;
         z-index: 0;
         width: 400px;
@@ -139,7 +139,7 @@ cortado pelas laterias ao inves de encolhido*/
 @media (min-width: 768px) {
     .z-0 {
         position: absolute;
-        top: 150px;
+        top: 185px;
         left:0;
         z-index: 0;
         width: 400px;
@@ -150,3 +150,36 @@ cortado pelas laterias ao inves de encolhido*/
         mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     }
 }
+
+/* estádio */
+
+@media (min-width: 0px) {
+    .bg-estadio {
+        background-image: url(/images/bg-3-estadio.jpg);
+        background-size: 1920px 1080px;
+        background-position: center -150px;
+        background-repeat: no-repeat;
+        min-height: 411px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .bg-estadio {
+        background-image: url(/images/bg-3-estadio.jpg);
+        background-size: 1920px 1080px;
+        background-position: center -150px;
+        background-repeat: no-repeat;
+        min-height: 511px;
+    }
+}
+
+.bg-tips {
+    min-height: 100px;
+    background-image: url(/images/bg-3-pattern.png);
+    background-size: 4px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px #3f3f3f, inset 0px 15px 30px 0 rgb(0 0 0 / 50%);
+}
+
