@@ -5,6 +5,19 @@
     font-family: 'Russo One', sans-serif;
 }
 
+/* cor amarelo para texto */
+
+.cor-amarelo {
+    color: #FECC00;
+}
+
+.cor-branco {
+    color: #fefefe;
+}
+
+.font-cinza {
+    color: #929396;
+}
 
 /* tamanho da fonte */
 @media (min-width: 0px) {
@@ -98,12 +111,6 @@ cortado pelas laterias ao inves de encolhido*/
     position: relative;
 }
 
-/* fonte cinza */
-
-.font-cinza {
-    color: #929396;
-}
-
 /* campo de fut componente2 */
 
 @media (min-width: 0px) {
@@ -183,3 +190,62 @@ cortado pelas laterias ao inves de encolhido*/
     box-shadow: 0 0 0 3px #3f3f3f, inset 0px 15px 30px 0 rgb(0 0 0 / 50%);
 }
 
+.tip-pais {
+    font-size: 1.0em; 
+    color: #fefefe; 
+    opacity: 0.5;
+}
+
+@media (min-width: 0px) {
+    .img-shrink {
+        width: 40px;
+    }
+
+    .pais {
+        font-size: 0.5em;
+    }
+
+    .liga {
+        font-size: 0.8rem;
+    }
+
+    .qtd-tip {
+        font-size: calc(0.825rem + 0.9vw);
+    }
+}
+
+@media (min-width: 768px) {
+    .img-shrink {
+        width: 60px;
+    }
+
+    .pais {
+        font-size: 0.8em;
+    }
+
+    .liga {
+        font-size: 1.1rem;
+    }
+
+    .qtd-tip {
+        font-size: calc(1.125rem + 0.9vw);
+    }
+}
+
+@media (min-width: 992px) {
+    .img-shrink {
+        width: 80px;
+    }
+
+    .pais {
+        font-size: 1em;
+    }
+
+    .liga {
+        font-size: 1.25rem;
+    }
+
+    .qtd-tip {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+}
