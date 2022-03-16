@@ -190,6 +190,27 @@ cortado pelas laterias ao inves de encolhido*/
     box-shadow: 0 0 0 3px #3f3f3f, inset 0px 15px 30px 0 rgb(0 0 0 / 50%);
 }
 
+.bg-muro {
+    background-image: url(/images/bg-5-tijulo.jpg);
+}
+
+.bg-celular {
+    background-image: url(https://www.tipspro.com.br/bra/img/bg-field-white-2.png);
+}
+
+.bg-preto {
+    background-color: #111111;
+    min-height: 570px;
+    position: relative;
+}
+
+.celular-wrap {
+    background-image: url(https://www.tipspro.com.br/bra/img/vip-tip-preview-bra.png);
+    background-size: contain;
+    width: 446px;
+    height: 679px;
+}
+
 .tip-pais {
     font-size: 1.0em; 
     color: #fefefe; 
@@ -248,4 +269,30 @@ cortado pelas laterias ao inves de encolhido*/
     .qtd-tip {
         font-size: calc(1.325rem + 0.9vw);
     }
+}
+
+.tipspro1 {
+    position: absolute;
+    opacity: .1;
+    width: 300px;
+    top: -20px;
+    left: calc(50% - 310px);
+}
+
+.tipspro2 {
+    position: absolute;
+    opacity: .1;
+    width: 300px;
+    bottom: -20px;
+    left: calc(50% - 60px);
+}
+
+
+
+.btn-mobile {
+    z-index: 15000;
+    position: fixed;
+    top: calc(80vh);
+    left: 50%;
+    transform: translate(-50%);
 }
