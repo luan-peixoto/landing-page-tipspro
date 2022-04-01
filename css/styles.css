@@ -5,6 +5,26 @@
     font-family: 'Russo One', sans-serif;
 }
 
+/* div com aviso pro vercel */
+.aviso {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
 /* cor amarelo para texto */
 
 .cor-amarelo {
